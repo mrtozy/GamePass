@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A1014"
+    tools:context=".ui.fragment.AnasayfaFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAnasayfa"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/gamepass"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/filmRv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="190dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@color/black"
+        android:backgroundTint="#266D36"
+        android:drawableRight="@drawable/ampul"
+        android:shadowColor="#266D36"
+        android:text="BAĞIMSIZ"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textColorHighlight="#266D36"
+        android:textColorHint="#266D36"
+        android:textColorLink="#266D36"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filmRv" />
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="190dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="8dp"
+        android:background="#266C5A"
+        android:backgroundTint="#266C5A"
+        android:drawableRight="@drawable/klasikler"
+        android:shadowColor="#266D36"
+        android:text="Button"
+        android:textColor="@color/white"
+        android:textColorHighlight="#266D36"
+        android:textColorHint="#266D36"
+        android:textColorLink="#266D36"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="190dp"
+        android:layout_height="65dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#266C5A"
+        android:backgroundTint="#266C5A"
+        android:drawableRight="@drawable/nisanci"
+        android:shadowColor="#266D36"
+        android:text="Button"
+        android:textColor="@color/white"
+        android:textColorHighlight="#266D36"
+        android:textColorHint="#266D36"
+        android:textColorLink="#266D36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="190dp"
+        android:layout_height="65dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#225F73"
+        android:backgroundTint="#225F73"
+        android:drawableRight="@drawable/spor"
+        android:shadowColor="#266D36"
+        android:text="Button"
+        android:textColor="@color/white"
+        android:textColorHighlight="#266D36"
+        android:textColorHint="#266D36"
+        android:textColorLink="#266D36"
+        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="190dp"
+        android:layout_height="65dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#225F73"
+        android:backgroundTint="#225F73"
+        android:drawableRight="@drawable/macera"
+        android:shadowColor="#266D36"
+        android:text="Button"
+        android:textColor="@color/white"
+        android:textColorHighlight="#266D36"
+        android:textColorHint="#266D36"
+        android:textColorLink="#266D36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="190dp"
+        android:layout_height="65dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#1B557E"
+        android:backgroundTint="#1B557E"
+        android:drawableRight="@drawable/platform"
+        android:shadowColor="#266D36"
+        android:text="Button"
+        android:textColor="@color/white"
+        android:textColorHighlight="#266D36"
+        android:textColorHint="#266D36"
+        android:textColorLink="#266D36"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="190dp"
+        android:layout_height="65dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#1B557E"
+        android:backgroundTint="#1B557E"
+        android:drawableRight="@drawable/dovus"
+        android:shadowColor="#266D36"
+        android:text="Button"
+        android:textColor="@color/white"
+        android:textColorHighlight="#266D36"
+        android:textColorHint="#266D36"
+        android:textColorLink="#266D36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="190dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:background="@color/black"
+        android:backgroundTint="#266D36"
+        android:drawableRight="@drawable/aile"
+        android:shadowColor="#266D36"
+        android:textColor="@color/white"
+        android:textColorHighlight="#266D36"
+        android:textColorHint="#266D36"
+        android:textColorLink="#266D36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/filmRv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
